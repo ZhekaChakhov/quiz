@@ -1,8 +1,126 @@
-$font-stack:    Arial, sans-serif;
-$primary-color: #544f89;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
 
 body {
-  font: 100% $font-stack;
-  font-size: 38px;
-  color: $primary-color;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #6a5be2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App {
+  width: 31.25rem;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  background-color: #fff;
+  position: relative;
+
+  .result {
+    text-align: center;
+
+    button {
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      border-radius: 2rem;
+      border: 0;
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      background-color: darken(#ff006e, 3%);
+      color: #fff;
+      margin-top: 1.25rem;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 9.375rem;
+    }
+  }
+
+  .progress {
+    height: 0.625rem;
+    border-radius: 2rem;
+    background-color: rgb(232, 232, 232);
+    margin-bottom: 1.25rem;
+
+    &__inner {
+      height: 100%;
+      border-radius: 2rem;
+      width: 80%;
+      background: rgb(18, 231, 48);
+      transition: all 0.3s ease-in-out;
+      background: linear-gradient(90deg, rgba(18, 231, 48, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    height: 3.125rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:before {
+    width: 95%;
+    bottom: -0.625rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 0;
+  }
+
+  &:after {
+    width: 90%;
+    bottom: -1.25rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 1rem;
+      border: 0.125rem solid rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      margin-bottom: 0.625rem;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        border: 0.125rem solid rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+	html {
+    font-size: 10px;
+  }
+}
+
+@media (orientation: portrait) {
+  /* Для вертикальной ориентации */
 }
