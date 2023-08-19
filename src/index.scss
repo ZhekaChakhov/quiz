@@ -25,6 +25,31 @@ body {
   background-color: #fff;
   position: relative;
 
+  .correct {
+    background-color: rgb(132, 212, 132);
+  }
+
+  .wrong {
+    background-color: rgb(243, 88, 88);
+  }
+
+  .next {
+    text-align: center;
+
+    button {
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      border-radius: 2rem;
+      border: 0;
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      background-color: darken(#ff006e, 3%);
+      color: #fff;
+      margin-top: 1.25rem;
+      cursor: pointer;
+    }
+  } 
+
   .result {
     text-align: center;
 
