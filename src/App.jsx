@@ -4,17 +4,61 @@ import "./index.scss";
 const questions = [
 	{
 		title: "Мое отчество?",
-		variants: ["Александрович", "Анатольевич", "Алексеевич"],
+		variants: ["Анатольевна", "Анатольевич", "Анатолий"],
 		correct: 1,
 	},
 	{
-		title: "Мое имя?",
-		variants: ["Александр", "Евгений", "Алексей"],
-		correct: 1,
+		title: "Откуда я родом?",
+		variants: ["США", "Россия", "Китай", "Доминиканы"],
+		correct: 0,
 	},
 	{
-		title: "Моя фамилия?",
-		variants: ["Александров", "Чахов", "Алексеев"],
+		title: "Какой у меня размер ноги?",
+		variants: ["Большой", "Маленький", "Хуй через плечо"],
+		correct: 2,
+	},
+	{
+		title: "Keep calm and ...",
+		variants: [
+			"stay positive.",
+			"realize your dreams.",
+			"love real madrid.",
+			"love cocks.",
+		],
+		correct: 2,
+	},
+	{
+		title: "When dogs bark...",
+		variants: [
+			"the lion stays still.",
+			"I am gay.",
+			"очкошник за стеной только.",
+		],
+		correct: 0,
+	},
+	{
+		title: "Я левша или правша?",
+		variants: ["Большой", "Маленький", "Правша", "Левша"],
+		correct: 2,
+	},
+	{
+		title: "Какой вуз я окончил",
+		variants: ["Хогвартс", "РЛИ", "Кэмбридж", "СПБГУ"],
+		correct: 3,
+	},
+	{
+		title: "Я ...",
+		variants: ["STRAIGHT MAN", "fUCKING GAY", "ВОЛК", "WALK"],
+		correct: 2,
+	},
+	{
+		title: "Любимый вид спорта",
+		variants: ["Футбол", "Гачи Мучи", "Борьба", "Хоббихорсинг"],
+		correct: 0,
+	},
+	{
+		title: "Ладно.",
+		variants: ["Ладно.", "Жак Фреско.", "че сказать то блять?"],
 		correct: 1,
 	},
 ];
